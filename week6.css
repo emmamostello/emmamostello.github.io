@@ -1,0 +1,16 @@
+.box {
+    border: 2px dashed red;
+}
+
+.text {
+    border: 1em dashed blue;
+    padding: 10em;
+    background: lightblue;
+ 
+}
+
+/* ems and rems 
+/* view width and height 
+/* percentages 
+/* vw is one of a hundred 
+
