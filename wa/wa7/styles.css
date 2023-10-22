@@ -75,11 +75,13 @@ body {
         .element {
             width: 30%;
         }
-    }
+}
+
     @media only screen and (max-width: 500px) {
         .container {
             flex-direction: column;
         }
+
         .element {
             width: 100%;
         }

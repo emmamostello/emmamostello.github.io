@@ -33,7 +33,7 @@ p {
 @keyframes getbig {
     from{
         font-size: 1vw
-        color: red;
+        color red;
     }
 
     to{

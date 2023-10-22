@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: powderblue;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(15, 15, 105);
+}
+
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:30px;
+    background-color: rgb(5, 67, 14);
+}
+nav a{
+    width: 20vw;
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+    font: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+}
+
+img{
+    width:60vw;
+    height: 60vh;
+}
+
+#red-ball{
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    position: absolute;
+    animation: moveBackAndForth 5s linear infinite;
+    left:5vw;
+    top:0;
+}
+
+.center-image {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+#box1{
+    width: 15vw;
+    height: 15vh;
+    position: relative;
+    top: 37vw;
+    left: -40vw; 
+    font-size: 35px;
+    background-color: powderblue;
+    color: black;
+}
+
+#box1:hover {
+    background-color: rgb(6, 59, 4);
+}
+
+#cu-logo{
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    position: absolute;
+    animation: moveBackAndForth 5s linear infinite;
+    left:5vw;
+    top:0;
+}
+
+@keyframes moveBackAndForth {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: calc(100% - 100px);
+    }
+    100% {
+      left: 0;
+    }
+  }
+  
