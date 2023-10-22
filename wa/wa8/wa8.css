@@ -42,6 +42,17 @@ img{
     left:5vw;
     top:0;
 }
+@keyframes moveBackAndForth {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: calc(100% - 100px);
+    }
+    100% {
+      left: 0;
+    }
+  }
 
 .center-image {
     position: absolute;
@@ -65,25 +76,3 @@ img{
     background-color: rgb(6, 59, 4);
 }
 
-#cu-logo{
-    width: 15em;
-    height: 15em;
-    border-radius: 50%;
-    position: absolute;
-    animation: moveBackAndForth 5s linear infinite;
-    left:5vw;
-    top:0;
-}
-
-@keyframes moveBackAndForth {
-    0% {
-      left: 0;
-    }
-    50% {
-      left: calc(100% - 100px);
-    }
-    100% {
-      left: 0;
-    }
-  }
-  
