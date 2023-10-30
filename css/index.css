@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    background-color: #e4e4e4;
+    color: #02260e;
+}
+
+.logo {
+    font-size: 275%;
+    font-weight: bold;
+    padding: .5em 14em;
+    position: sticky;
+    margin: 0 auto;
+    max-width: 980px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #0a2c0a;
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    color: silver;
+    }
+
+nav{
+    background-color: #0a2c0a;
+    padding: 1em;
+    position: sticky;
+    top: 0%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
+nav a {
+    font-size: 175%;
+    color: silver;
+    text-decoration: none;
+    padding: 1em .5em;
+}
+
+.container {
+    text-align: center; /* Optionally, you can center the content within a parent container as well */
+  }
+  
+.header {
+    text-align: center;
+  }
+
+.inroduction {
+    text-align: center; 
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    padding: 1em;
+}
+
+.image {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-box {
+    width: 60%; /* Set the desired width for the box */
+    margin: 0 auto; /* Center the box horizontally */
+    padding: 20px; /* Add padding to create space around the text */
+    background-color: #e4e4e4;; /* Set the background color of the box */
+    color: #0a2c0a;
+  }
+
+.text-box:hover{
+    background-color: #02260e;
+    color: silver;
+}
+
+
+@media screen and (max-width: 400px) {
+    .logo {
+        text-align: center;
+        max-width: 400px;
+    }
+    .intoduction {
+        padding:.5em
+    }
+    .image {
+        display: none;
+    }
+    .text-box {
+        flex-direction: column;
+    }
+}
