@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         button, div {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid #00000099;
+            background-color: #983c0b99;
+            color: #500a0a;
+            box-shadow: 1px 1px 2px #0000c866;
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+            height: 200px;
+            width: 500px;
+            font-size: larger;
+            font-weight:bolder;
+}
+    </style>
+</head>
+<body>
+    
+    <button type="button">What is your Halloween costume?</button>
+    <button id="press" type="button">Press here</button>
+
+
+    <script>
+      
+        // variables defined using 'const' or 'let'
+        const button = document.querySelector("button");
+        const press = document.getElementById("press");
+
+        //button.addEventListener('click', updateName);
+        press.addEventListener('click', updateName);
+
+        function updateName() {
+            let name = prompt ("Enter your Halloween Costume!!!");
+            console.log("The function ran correctly")
+            console.log(name);
+            button.textContent = `Halloween Costume: ${name}`;
+            press.innerHTML = `<h1><3</h1>`
+        }
+    </script>
+</body>
+</html>
