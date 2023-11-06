@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Silly story generator</title>
+    <link rel="stylesheet" href="wa10.css">
+    <style>
+      
+    </style>
+  </head>
+
+  <body>
+    <div class="">
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="" />
+    </div>
+    <div>
+      <label for="us">US</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story"></p>
+
+    <script>
+        //html references
+        const customName = document.getElementById('customname');
+        const randomize = document.querySelector('.randomize');
+        const story = document.querySelector('.story');
+    
+        //random Value 
+        function randomValueFromArray(array){
+            const random = Math.floor(Math.random()*array.length);
+            return array[random];
+        }
+    
+    
+        //varaibles to declare
+        let storyText = "One day, :insertx: went to :inserty: to adopt a pet snail. She named it Jimmy, but he started to wildly misbehave. :insertx: couldn't take it any longer so she :insertz:. Luckily, Bob was kind enough to take Jimmy in because of their crazy snail obsession."
+        const insertX = ["Miley Cyrus", "Marlee", "Mary"];
+        const insertY = ["the Aspen Chalet", "Dollywood", "the Great Pyramid of Giza"];
+        const insertZ = ["put him for adoption on Facebook marketplace", "kicked him out of her house", "banished him from the United States"];
+        
+    
+        //event listener
+        randomize.addEventListener('click', result);
+    
+    
+        
+        //method or function
+        function result(){
+            let newStory = storyText;
+            const xItem = randomValueFromArray(insertX);
+            const yItem = randomValueFromArray(insertY);
+            const zItem = randomValueFromArray(insertZ);
+    
+            newStory = newStory.replaceAll(':insertx:', xItem);
+            newStory = newStory.replaceAll(':inserty:', yItem);
+            newStory = newStory.replaceAll(':insertz:', zItem);
+    
+    
+            if(customName.value !== '') {
+                const name = customName.value;
+                newStory = newStory.replaceAll('Bob', name);
+      }
+    
+            if(document.getElementById("uk").checked) {
+                const weight = Math.round(300/2.205) + " kilograms";
+                const temperature =  Math.round(94 * 5/9) + "celsius";
+                newStory = newStory.replaceAll(':300 pounds:', weight);
+                newStory = newStory.replaceAll(':94 fahrenheit:', temperature);
+      }
+    
+            story.textContent = newStory;
+            story.style.visibility = 'visible';
+    }
+    </script>
+  </body>
+</html>
