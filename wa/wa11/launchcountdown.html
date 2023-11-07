@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Live output</h2>
+<div class="output" style="height: 410px;overflow: auto;"></div>
+<p class="a11y-label">
+</p>
+<textarea id="code" class="playable-code" style="height: 300px;width: 95%">
+const output = document.querySelector('.output');
+output.innerHTML = '';
+
+let i = 10;
+
+while (i >= 0) {
+  const para = document.createElement('p');
+  if (i === 10) {
+    para.textContent = `Countdown ${i}`;
+  } else if (i === 0) {
+    para.textContent = 'Blast off!';
+  } else {
+    para.textContent = i;
+  }
+
+  output.appendChild(para);
+
+  i--;
+}
+</textarea>
+
+<div class="playable-buttons">
+  <input id="reset" type="button" value="Reset" />
+  <input id="solution" type="button" value="Show solution" />
+</div>
+
+</body>
+</html>
