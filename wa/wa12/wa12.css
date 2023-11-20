@@ -70,9 +70,9 @@ button {
   }
 
 .text-box {
-    width: 60%; /* Set the desired width for the box */
-    margin: 0 auto; /* Center the box horizontally */
-    padding: 20px; /* Add padding to create space around the text */
-    background-color: #e4e4e4;; /* Set the background color of the box */
+    width: 60%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #e4e4e4;; 
     color: #0a2c0a;
 }
