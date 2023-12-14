@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="js.css">
 </head>
 <body>
-  <h1>What's your phone number???</h1>
-  <p id="randomNumber"></p>
-  <button onclick="generateRandomNumber()">Generate Your Phone Number</button>
-  <button id="yesButton" onclick="generateNewNumber('Yes')">Yes</button>
-  <button onclick="generateNewNumber('No')">No</button>
+    <h1>What's your phone number???</h1>
+    <p id="randomNumber"></p>
+    <button id="generateButton" onclick="generateRandomNumber()">Generate Your Phone Number</button>
+    <div class="floating-buttons">
+      <button id="yesButton" onmouseover="moveButton('yes')" onclick="generateNewNumber('Yes')">Yes</button>
+      <button id="noButton" onmouseover="moveButton('no')" onclick="generateNewNumber('No')">No</button>
+    </div>
 
     <div class="image-container">
     <img src="/js/phonestock.png" alt="Phone cartoon stock image">

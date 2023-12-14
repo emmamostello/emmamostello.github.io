@@ -9,10 +9,27 @@ body {
     font-size: 24px;
     margin-top: 20px;
   }
-  button {
-    margin-top: 10px;
+  .floating-buttons {
+    position: relative;
+
+  }
+  .floating-buttons button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+    color: rgb(4, 47, 4);
     background-color: antiquewhite;
-    color: rgb(4, 56, 4);
+  }
+  .floating-buttons button:hover {
+    transform: translateX(5px) translateY(-5px);
+  }
+  #generateButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(4, 47, 4);
+    background-color: antiquewhite;
   }
 
   .image-container {
